@@ -1,0 +1,37 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #6b6a6a;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.item>.item-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item>.item-name>span{
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+.item>.item-name>.strike-through{
+    text-decoration: line-through;
+}
+.item>p>button{
+    background:transparent;
+    border: none;
+    outline: none;
+}
+
+.item>p>.todo-item-edit{
+    color: #ee00ce;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.item>p>.todo-item-delete{
+    color: #9c2c2c;
+    margin: 0 10px;
+    cursor: pointer;
+}

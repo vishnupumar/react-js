@@ -1,0 +1,18 @@
+.users-container>.user-details{
+    text-align: left;
+    padding: 20px;
+}
+.users-container>.user-details>h2{
+   font-weight: 400;
+   padding: 10px;
+}
+.users-container>.user-details>p{
+    color: rgb(98, 100, 100);
+    padding: 10px;
+ }
+ .users-container>.filter-radio-box>span{
+    margin: 0 10px 0 5px;
+ }
+ .users-container>.filter-radio-box{
+    padding:20px;
+ }

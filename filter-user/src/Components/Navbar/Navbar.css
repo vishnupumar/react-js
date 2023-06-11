@@ -1,0 +1,20 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    
+}
+.nav-bar>.nav-bar-right>a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: #fff;
+}
+.nav-bar>.nav-bar-right{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+

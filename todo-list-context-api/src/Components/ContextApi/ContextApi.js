@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const myContext = createContext();
 
@@ -7,6 +7,15 @@ function ContextProvider({ children }) {
   const [inputState, setInputState] = useState("");
   const [edit, setEdit] = useState(false);
   const [editId,setEditId] = useState(null);
+
+  useEffect(()=>{
+    const data = localStorage.getItem("todoState");
+    setTodoState(JSON.parse(data))
+  },[])
+
+  useEffect(()=>{
+    localStorage.setItem("todoState",JSON.stringify(todoState))
+  },[todoState])
 
   const addTodo = (item) => {
     setTodoState([

@@ -21,7 +21,7 @@ export const TodoItem = ({item}) => {
         </Flex>
         <Flex w="15%" justifyContent="space-around">
             <FaEdit cursor="pointer" color="purple" onClick={()=>{
-                editMode(item.id)
+                editMode(item)
             }} />
             <FaTrash cursor="pointer" color="tomato" onClick={()=>{
                 deleteTodo(item.id)

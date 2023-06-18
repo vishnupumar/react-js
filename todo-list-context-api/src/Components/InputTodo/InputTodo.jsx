@@ -3,7 +3,6 @@ import React, { useContext } from 'react'
 import { myContext } from '../ContextApi/ContextApi';
 
 export const InputTodo = () => {
-
     const { addTodo,inputState, setInputState,edit,updateTodo } = useContext(myContext);
 
   return (

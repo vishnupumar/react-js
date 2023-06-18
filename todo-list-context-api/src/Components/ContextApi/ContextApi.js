@@ -18,9 +18,10 @@ function ContextProvider({ children }) {
     ]);
   };
 
-  const editMode = (id) => {
+  const editMode = ({id,task}) => {
     setEdit(true)
     setEditId(id)
+    setInputState(task)
   };
 
   const updateTodo = (item) => {

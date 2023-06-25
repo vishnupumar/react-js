@@ -6,7 +6,7 @@ export const myContext = createContext();
 
 function ContextProvider({ children }) {
   const [moviesData, setMoviesData] = useState(movies);
-  const [searchedMovie, setSearchedMovie] = useState("");
+  const [searchedMovie, setSearchedMovie] = useState("harry potter");
   const [singleMovie,setSingleMovie] = useState({});
   const [pagination, setPagination] = useState(1);
   const ratingApi = process.env.REACT_APP_RATING_API

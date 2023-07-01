@@ -5,7 +5,7 @@ import { myContext } from "../ContextApi/myContext";
 export const Navbar=()=>{
     const [inputVal, setInputVal] = useState("")
 
-    const {searched,setSearched,pageNum,fetchImages} = useContext(myContext);
+    const {searched,setSearched,pageNum,setPageNum,fetchImages} = useContext(myContext);
 
     useEffect(()=>{
         fetchImages();
@@ -22,6 +22,7 @@ export const Navbar=()=>{
                 }} placeholder="Search images..." />
                 <Button colorScheme="blue" onClick={()=>{
                     setSearched(inputVal)
+                    setPageNum(1);
                 }}>Search</Button>
             </Flex>
         </Flex>

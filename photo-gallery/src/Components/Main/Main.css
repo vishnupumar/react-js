@@ -1,0 +1,23 @@
+.all-photos{
+    column-count: 4;
+
+}
+@media (max-width:950px) {
+    .all-photos{
+        column-count: 3;
+    }
+}
+@media (max-width:750px) {
+    .all-photos{
+        column-count: 2;
+    }
+}
+@media (max-width:450px) {
+    .all-photos{
+        column-count: 1;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+}

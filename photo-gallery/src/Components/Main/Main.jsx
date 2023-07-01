@@ -1,37 +1,35 @@
 import { Box, Button, Card, Flex, Image, Text } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { myContext } from "../ContextApi/myContext";
+import './Main.css';
 
 export const Main = () => {
   const { images, pageNum, setPageNum } = useContext(myContext);
 
   return (
     <Box>
-      <Flex flexWrap={"wrap"} justify={"center"}>
+      <Box className="all-photos" m={"10px"} >
         {images?.results?.map((ele,idx) => {
           return (
             <Card key={idx}
-              height={{ base: `${ele.height / 15}`, md: `${ele.height / 15}` }}
-              m={{ base: "5px", sm: "8px", md: "15px" }}
+              height={"100%"}
+              width={"100%"}
+              mb={"10px"}
               _hover={{ boxShadow: "dark-lg" }}
             >
               <Image
-                height={{
-                  base: `${ele.height / 15}`,
-                  md: `${ele.height / 15}`,
-                }}
-                width={{ base: `${ele.width / 15}`, md: `${ele.width / 15}` }}
+                height={"100%"}
+                
+                width={"100%"}
                 src={ele.urls.regular}
                 alt="#"
               />
               <Box
                 position={"absolute"}
+                _hover={{filter:"opacity(0.1)"}}
                 top={"0"}
-                height={{
-                  base: `${ele.height / 15}`,
-                  md: `${ele.height / 15}`,
-                }}
-                width={{ base: `${ele.width / 15}`, md: `${ele.width / 15}` }}
+                height={"100%"}
+                width={"100%"}
                 bg={"blackAlpha.500"}
               ></Box>
               <Text m={"10px"} position={"absolute"} top={"2"} color={"#fff"}>
@@ -43,7 +41,7 @@ export const Main = () => {
             </Card>
           );
         })}
-      </Flex>
+      </Box>
       <Flex justify={"center"} m={{ base: "10px", md: "20px" }}>
         {pageNum === 1 ? (
           <Button isDisabled>Prev</Button>

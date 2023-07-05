@@ -1,0 +1,18 @@
+.imageDiv>div>img{
+    width: 100%;
+    height: 92vh;
+    position: relative;
+    filter:drop-shadow(16px 16px 20px red) invert(15%);
+}
+.imageDiv>.video-text{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom:50%;
+    color: #fff;
+}
+@media (max-width:450px) {
+
+}
+

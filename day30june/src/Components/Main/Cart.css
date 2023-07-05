@@ -1,0 +1,40 @@
+.cartitem{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid rgb(221, 218, 218);
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cartitem>.price{
+    font-weight: bold;
+    margin: 10px;
+}
+.cartitem>.title{
+    width: 30%;
+}
+.cartitem>.removecartbtn{
+    padding: 5px 10px;
+    background-color: rgb(107, 18, 45);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.cartitems>h2{
+    padding: 5px 10px;
+}
+.cartitem>.quantitydiv>button:not(.quantityBtn){
+    background-color: #2291db;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.cartitem>.quantitydiv>.quantityBtn{
+    padding: 5px 10px;
+    border: none;
+}

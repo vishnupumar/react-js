@@ -1,0 +1,12 @@
+.tabs>button{
+    padding: 4px 16px;
+    background:transparent;
+    border: 1px solid grey;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0;
+}
+.tabs>.active{
+    background-color: grey;
+    color: #fff;
+}

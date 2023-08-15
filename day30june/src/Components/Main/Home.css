@@ -4,6 +4,20 @@
     position: relative;
     filter:drop-shadow(16px 16px 20px red) invert(15%);
 }
+.video-text>.show-productsBtn:hover{
+    color: #000;
+    border: 1px solid #000;
+}
+.show-productsBtn{
+    padding: 12px 25px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin: 10px;
+    cursor:pointer;
+    border-radius:10px;
+    margin-top: 40px;
+}
 .imageDiv>.video-text{
     position: absolute;
     top: 30%;
@@ -12,6 +26,7 @@
     bottom:50%;
     color: #fff;
 }
+
 @media (max-width:450px) {
 
 }

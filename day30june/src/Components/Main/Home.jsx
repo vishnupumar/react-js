@@ -13,20 +13,13 @@ export const Home = () => {
         className="video-text"
       >
         <h1>Welcome to DenMart</h1>
-        <p style={{ width: "50%", margin: "0 auto" }}>
+        <p style={{ width: "50%", margin: "15px auto" }}>
           Sint adipisicing proident non eiusmod labore veniam in. Et aliqua
           laboris consectetur adipisicing ad voluptate fugiat do consequat sunt
           consectetur.
         </p>
-        <button
-          style={{
-            padding: "8px 20px",
-            color: "#fff",
-            backgroundColor: "black",
-            border: "none",
-            margin: "10px",
-            cursor:"pointer"
-          }}
+        <button 
+          className="show-productsBtn"
           onClick={()=>{
             navigate('/products')
           }}

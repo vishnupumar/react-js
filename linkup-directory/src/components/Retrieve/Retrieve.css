@@ -1,0 +1,36 @@
+.retrieve-div>input{
+    width: 40%;
+    height: 24px;
+    border: 1px solid grey;
+    border-radius: 12px;
+    padding: 4px 12px;
+}
+
+.retrieve-div>input:focus{
+    border: none;
+    outline:1px solid rgb(236, 172, 172);
+}
+.retrieve-div>button{
+    padding: 8px 16px;
+    background:transparent;
+    border: 1px solid grey;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 10px;
+}
+.retrieve-div>button:hover{
+    background:grey;
+    color: #fff;
+}
+
+.retrieve-div>div{
+    border: 1px solid grey;
+    padding: 4px;
+    width: 50%;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.retrieve-div>div>svg{
+    cursor: pointer;
+}
